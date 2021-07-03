@@ -1,0 +1,1 @@
+Este projeto está sendo desenvolvimento de forma independente, com o propósito exclusivo de colocar em prática o conteúdo estudado na segunda edição do Hiring Coders.
