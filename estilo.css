@@ -20,5 +20,77 @@ header {
 #textoContainer1 {
     color: #ffffff;
     font-size: 16px;
-    font-variant-ligatures: ;
+}
+
+#sectionServices {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divTitulos {
+    text-align: center;
+    font-size: 36pt;
+    font-weight: 100;
+}
+
+.flex-section-services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divServices {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    border: 0px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 15px;
+    max-width: 200px;
+    width: 200px;
+}
+
+#sectionSomos {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #e5e5e5;
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+
+.divQuemSomos {
+    margin: 5% 5%;
+    text-align: justify;
+    border: 0px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    display: flex;
+    align-items: center;
+    font-size: 16pt;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+#somos1 {
+    padding: 5% 5%;
+}
+
+#somosImg1 {
+    padding-left: 5%;
+}
+
+#somos2 {
+    padding: 5% 5%;
+}
+
+#somosImg2 {
+    padding-right: 5%;
+}
+
+#somos3 {
+    font-style: italic;
 }
