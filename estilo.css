@@ -95,6 +95,7 @@ header {
 }
 
 #sectionPortifolio {
+    display: flex;
     background-color: #f75609;
     width: 100%;
     margin-left: auto;
@@ -105,6 +106,8 @@ header {
 
 .divPortifolio {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -119,4 +122,37 @@ header {
     box-shadow: 0px 0px 10px #000000;
     padding: 10px;
     width: 150px;
+}
+
+#sectionFormNewsletter {
+    display: flex;
+    background-color: #f75609;
+    padding-top: 5px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #b1c8d5;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 50%;
+    padding-bottom: 20px;
+}
+
+.footerContato {
+    padding-top: 10px;
+}
+
+#footerContato {
+}
+
+#footerDireitos {
+    text-align: center;
+    padding: 5px;
+    background-color: #000000;
+    color: #ffffff;
 }
