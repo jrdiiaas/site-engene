@@ -1,3 +1,24 @@
 body {
-    background-color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+header {
+    margin: 0px;
+}
+
+.headerBar {
+    background-color: #000000;
+    height: 50px;
+    padding: 2% 2%;
+}
+
+.containerBanner {
+    background-color: #000000;
+}
+
+#textoContainer1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-variant-ligatures: ;
 }

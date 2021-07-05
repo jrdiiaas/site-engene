@@ -2,34 +2,30 @@
 <html lang='pt-br'>
 
 <head>
-
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name="author" content="Alexandre Sousa Dias Junior">
-
     <title>Engene Jr - Soluções Sustentáveis - Página Inicial</title>
     <meta name="description"
         content="Projeto de instalações elétricas, sistema de energia solar fotovoltaica e consultoria em eficiência energética, encontre na Engene Jr!">
-
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <script type="text/javascript" src="script.js"></script>
-
+    <!-- <script type="text/javascript" src="script.js"></script> -->
 </head>
 
 <body>
     <header>
         <section>
-            <div class="headerLogo" id="logo1">
-                <img src="./imagens/logo-h.png" alt="Logo Engene Jr" title="Logo Engene Jr" />
+            <div class="headerBar" id="logo1">
+                <img src="./imagens/logo-h.png" alt="Logo Engene Jr" title="Logo Engene Jr" width="150px" />
             </div>
         </section>
     </header>
-    <section>
-        <div class="containerBanner" id="textoContainer1">
+    <section class="containerBanner">
+        <div id="textoContainer1">
             <h1>Você precisa economizar, reduzir o valor da conta de energia? Não perca mais tempo e pague menos com
                 nossas soluções!</h1>
         </div>
-        <div class="containerBanner" id="botaoContainer1">
+        <div id="botaoContainer1">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQojxKenU474DEISboldAWVAXTILBnmeCRpBREteBGiAbJiw/viewform"
                 title="Botão de pedido de orçamento" target="_blank">Pedir meu orçamento gratuito</a>
         </div>
@@ -90,6 +86,17 @@
             <h3>Conheça o Movimento Empresa Junior</h3>
         </div>
     </section>
+    <form action="#" method="POST">
+        <!-- a tag action indica o local onde os dados do formulário serão armazenado, no caso deverá conter o link do backend onde ficarão armazenados os dados do formulário.-->
+        <fieldset>
+            <legend>Inscreva-se em nossa NewsLetter para receber informações com exclusividade!</legend>
+            <label for="campo1">Nome</label>
+            <input type="text" name="Nome do Cliente" id="campo1" />
+            <label for="campo2">Email</label>
+            <input type="email" name="Email do Cliente" id="campo2" />
+            <input type="submit" value="Inscrever-se" />
+        </fieldset>
+    </form>
     <footer>
         <h2>Contato</h2>
         <a href="https://facebook.com/engenejr" target="_blank" title="Facebook"><img src="./imagens/facebook-logo.png"
