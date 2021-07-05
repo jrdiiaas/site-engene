@@ -71,7 +71,6 @@ header {
     align-items: center;
     font-size: 16pt;
     justify-content: space-around;
-    text-align: justify;
     background-color: #ffffff;
 }
 
@@ -93,4 +92,31 @@ header {
 
 #somos3 {
     font-style: italic;
+}
+
+#sectionPortifolio {
+    background-color: #f75609;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.divPortifolio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buttonPortifolio {
+    color: #f75609;
+    border-radius: 10px;
+    font-size: 14pt;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 10px;
+    width: 150px;
 }
