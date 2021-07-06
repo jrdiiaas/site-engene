@@ -15,17 +15,58 @@ header {
 
 .containerBanner {
     background-color: #000000;
+    background-image: url(./imagens/Prancheta\ 1background\ 2\ .png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1px;
+    max-width: 100%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 10%;
+    padding-left: 50%;
+}
+
+@media (max-width: 600px) {
+    .containerBanner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 16pt;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
 }
 
 #textoContainer1 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 26px;
+    width: 600px;
+}
+
+#botaoContainer1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 14pt;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 0px 2px #000000;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#botaoContainer1:hover {
+    background-color: #b1c8d5;
 }
 
 #sectionServices {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .divTitulos {
@@ -37,11 +78,22 @@ header {
 .flex-section-services {
     display: flex;
     justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (max-width: 780px) {
+    .flex-section-services {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .divServices {
+        margin: 5%;
+    }
 }
 
 .divServices {
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: justify;
     border: 0px solid #000;
     border-radius: 10px;
@@ -52,7 +104,6 @@ header {
 }
 
 #sectionSomos {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -72,6 +123,9 @@ header {
     font-size: 16pt;
     justify-content: space-around;
     background-color: #ffffff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #somos1 {
@@ -119,9 +173,14 @@ header {
     font-size: 14pt;
     border-color: transparent;
     border-style: solid;
-    box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 2px #000000;
     padding: 10px;
     width: 150px;
+}
+
+#buttonPortifolio:hover {
+    color: #ffffff;
+    background-color: #f75609;
 }
 
 #sectionFormNewsletter {
