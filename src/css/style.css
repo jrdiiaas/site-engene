@@ -154,9 +154,10 @@ body {
     border: 0px solid #000;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #000000;
-    padding: 15px;
-    max-width: 200px;
-    width: 200px;
+    padding: 20px;
+    width: 300px;
+    margin: 25px;
+    font-size: 12pt;
 }
 
 @media (max-width: 850px) {
@@ -244,6 +245,7 @@ body {
     text-align: center;
     background-color: #f75609;
     font-size: 16pt;
+    padding: 50px;
 }
 
 .divPortifolio {
