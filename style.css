@@ -1,16 +1,15 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-}
-
-header {
     margin: 0px;
 }
 
-.headerBar {
+#headerBar {
     background-color: #000000;
-    height: 50px;
-    padding: 2% 2%;
+}
+
+.logoBar {
+    width: 150px;
+    margin: 10px;
 }
 
 .containerBanner {
@@ -18,37 +17,26 @@ header {
     background-image: url(./imagens/Prancheta\ 1background\ 2\ .png);
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 1px;
     max-width: 100%;
-    height: 550px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 10px 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-right: 10%;
-    padding-left: 50%;
+    align-items: center;
 }
 
-@media (max-width: 600px) {
-    .containerBanner {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        font-size: 16pt;
-        padding-left: 25px;
-        padding-right: 25px;
-        width: 100%;
-    }
+.section1 {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #textoContainer1 {
     color: #ffffff;
-    font-size: 26px;
-    width: 600px;
+    font-size: 18px;
+    width: 100%;
+    flex-grow: 1;
+    margin: 0% 10% 0% 50%;
+    text-align: justify;
 }
 
 #botaoContainer1 {
@@ -58,15 +46,63 @@ header {
     border-color: transparent;
     border-style: solid;
     box-shadow: 0px 0px 2px #000000;
+    margin: 0% 10% 0% 50%;
     padding: 15px;
     font-weight: 600;
+    animation-duration: 4s;
+    animation-name: botaoContainer1;
+    width: 260px;
+    height: auto;
+    flex-grow: 0;
+}
+
+@media (max-width: 850px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textoContainer1 {
+        color: #ffffff;
+        font-size: 14px;
+        max-width: 60%;
+        flex-grow: 1;
+        margin: 0% 0% 0% 0%;
+        text-align: justify;
+    }
+
+    #botaoContainer1 {
+        background-color: #ffffff;
+        border-radius: 10px;
+        font-size: 12pt;
+        border-color: transparent;
+        border-style: solid;
+        box-shadow: 0px 0px 2px #000000;
+        margin: 0% 0% 0% 0%;
+        padding: 15px;
+        font-weight: 600;
+        animation-duration: 3s;
+        animation-name: botaoContainer1;
+        width: 220px;
+        height: auto;
+        flex-grow: 0;
+    }
+}
+
+@keyframes botaoContainer1 {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 50%;
+    }
+
 }
 
 #botaoContainer1:hover {
     background-color: #b1c8d5;
-}
-
-#sectionServices {
+    cursor: pointer;
 }
 
 .divTitulos {
@@ -88,6 +124,7 @@ header {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     .divServices {
         margin: 5%;
     }
@@ -181,6 +218,7 @@ header {
 #buttonPortifolio:hover {
     color: #ffffff;
     background-color: #f75609;
+    cursor: pointer;
 }
 
 #sectionFormNewsletter {
@@ -191,8 +229,14 @@ header {
     padding-bottom: 50px;
 }
 
+#portifolio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
-    background-color: #b1c8d5;
+    background-color: #03a000;
     padding-top: 5px;
     display: flex;
     justify-content: space-around;
@@ -204,14 +248,13 @@ footer {
 
 .footerContato {
     padding-top: 10px;
-}
-
-#footerContato {
+    color: #000;
 }
 
 #footerDireitos {
     text-align: center;
     padding: 5px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #03a000;
+    color: #000;
+    font-weight: 600;
 }

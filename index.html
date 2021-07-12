@@ -8,29 +8,34 @@
     <title>Engene Jr - Soluções Sustentáveis - Página Inicial</title>
     <meta name="description"
         content="Projeto de instalações elétricas, sistema de energia solar fotovoltaica e consultoria em eficiência energética, encontre na Engene Jr!">
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+    <script type="text/javascript" src="./src/script.js"></script>
 </head>
 
 <body>
     <header>
         <section>
-            <div class="headerBar" id="logo1">
-                <img src="./imagens/logo-h.png" alt="Logo Engene Jr" title="Logo Engene Jr" width="150px" />
+            <div id="headerBar">
+                <a href="#">
+                    <img src="./src/assets/images/logo-h.png" alt="Logo Engene Jr" title="Engene Jr"
+                        class="logoBar" /></a>
             </div>
         </section>
     </header>
     <section class="containerBanner">
-        <div id="textoContainer1">
-            <h1>Você precisa economizar, reduzir o valor da conta de energia? Não perca mais tempo e pague menos com
-                nossas soluções!</h1>
-        </div>
-        <div id="botaoContainer1">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQojxKenU474DEISboldAWVAXTILBnmeCRpBREteBGiAbJiw/viewform"
-                title="Botão de pedido de orçamento" target="_blank"
-                style="text-decoration: none; color: #f75609;">Pedir meu
-                orçamento
-                gratuito</a>
+        <div class="section1">
+            <div id="textoContainer1">
+                <h1>Você precisa economizar e reduzir o valor da conta de energia? Não perca mais tempo e pague menos
+                    com
+                    nossas soluções!</h1>
+            </div>
+            <div id="botaoContainer1">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQojxKenU474DEISboldAWVAXTILBnmeCRpBREteBGiAbJiw/viewform"
+                    title="Botão de pedido de orçamento" target="_blank"
+                    style="text-decoration: none; color: #f75609; text-align: center;">Pedir meu
+                    orçamento
+                    gratuito</a>
+            </div>
         </div>
     </section>
     <section id="sectionServices">
@@ -60,57 +65,79 @@
         <div class="divTitulos" id="titulo2">
             <h2>Sobre a Engene Jr</h2>
         </div>
-        <div class="divQuemSomos" id="somos1">
-            <div>
+        <div class="divQuemSomos">
+            <div class="somosPainel">
                 <p>Somos a Empresa Júnior do curso de Engenharia de Energias da Unilab. <br><br>
                     Somos uma associação civil, sem fins lucrativos, constituída e gerida por estudantes de graduação e
                     assistida por professores orientadores e profissionais parceiros.</p>
             </div>
-            <div id="somosImg1">
+            <div class="somosPainel">
                 <img src="https://mlbtrq2d2uc2.i.optimole.com/Iw2wUlQ.k0w6~5c4e7/w:575/h:431/q:auto/http://engenejr.unilab.edu.br/wp-content/uploads/2019/07/WhatsApp-Image-2019-06-10-at-14.26.23-15.jpg"
-                    alt="Time de funcionários Engene Jr">
+                    alt="Time de funcionários Engene Jr" width="100%">
             </div>
         </div>
-        <div class="divQuemSomos" id="somos2">
-            <div id="somosImg2">
-                <img src="https://mlbtrq2d2uc2.i.optimole.com/Iw2wUlQ.k0w6~5c4e7/w:500/h:500/q:auto/http://engenejr.unilab.edu.br/wp-content/uploads/2019/07/WhatsApp-Image-2018-12-16-at-19.09.47-1.jpeg"
-                    alt="Time de funcionários Engene Jr">
+        <div class="divQuemSomos">
+            <div class="somosPainel" id="flexSomos2">
+                <div class="somosPainel">
+                    <img src="https://mlbtrq2d2uc2.i.optimole.com/Iw2wUlQ.k0w6~5c4e7/w:500/h:500/q:auto/http://engenejr.unilab.edu.br/wp-content/uploads/2019/07/WhatsApp-Image-2018-12-16-at-19.09.47-1.jpeg"
+                        alt="Time de funcionários Engene Jr" width="100%">
+                </div>
+                <div class="somosPainel">
+                    <p>A Engene Jr visa promover acessibilidade de energia e sustentabilidade através de projetos
+                        personalizados
+                        de qualidade.<br><br>
+                        Nossa missão:<br><br>
+                        <span style="font-style: italic;">
+                            “Transformar a sociedade com soluções energéticas, gerando resultados através de projetos de
+                            alto
+                            impacto”
+                        </span>
+                </div>
             </div>
-            <p>A Engene Jr visa promover acessibilidade de energia e sustentabilidade através de projetos
-                personalizados
-                de qualidade.<br><br>
-                Nossa missão:<br><br>
-                <span id="somos3">
-                    “Transformar a sociedade com soluções energéticas, gerando resultados através de projetos de
-                    alto
-                    impacto”
-                </span>
     </section>
     <section id="sectionPortifolio">
-        <div class="divPortifolio" id="protifolio1">
+        <div class="divPortifolio">
             <h3>Acompanhe nossas novidades pelo Instagram!</h3>
             <img src="https://mlbtrq2d2uc2.i.optimole.com/Iw2wUlQ.k0w6~5c4e7/w:430/h:430/q:auto/http://engenejr.unilab.edu.br/wp-content/uploads/2020/02/insta_carrossel-1.png"
                 alt="Imagem do Instagram">
         </div>
         <div class="divPortifolio">
-            <div id="protifolio2">
+            <div>
                 <h3>Acesse aqui nosso portifólio</h3>
                 <button id="buttonPortifolio">Portifólio</button>
             </div>
-            <div id="protifolio3">
+            <div>
                 <h3>Conheça o Movimento Empresa Junior</h3>
+                <div class="portifolio3">
+                    <a href="https://brasiljunior.org.br/conheca-o-mej"><img src="./src/assets/images/BrasilJr.jpg"
+                            alt="" style=" width: 100%; max-width: 100%;"></a>
+                    <a href="https://www.instagram.com/fejece/"><img src="./src/assets/images/fejece.png" alt=""
+                            style="width: 100%; max-width: 80%;"></a>
+                </div>
             </div>
         </div>
     </section>
     <section id="sectionFormNewsletter">
         <form action="#" method="POST">
             <!-- a tag action indica o local onde os dados do formulário serão armazenado, no caso deverá conter o link do backend onde ficarão armazenados os dados do formulário.-->
-            <p>Inscreva-se em nossa NewsLetter para receber informações com exclusividade!</p>
-            <label for="campo1">Nome</label>
-            <input type="text" name="Nome do Cliente" id="campo1" />
-            <label for="campo2">Email</label>
-            <input type="email" name="Email do Cliente" id="campo2" />
-            <input type="submit" value="Inscrever-se" />
+            <div class="sectionFormPai">
+                <div class="sectionFormNewsletter">
+                    <p style="text-align: center;"><strong>Inscreva-se em nossa NewsLetter para
+                            receber informações com
+                            exclusividade!</strong></p>
+                </div>
+                <div class="sectionFormNewsletter">
+                    <label for="campo1">Nome </label>
+                    <input type="text" name="Nome do Cliente" id="campo1" />
+                </div>
+                <div class="sectionFormNewsletter">
+                    <label for="campo2">Email </label>
+                    <input type="email" name="Email do Cliente" id="campo2" />
+                </div>
+                <div class="sectionFormNewsletter">
+                    <input type="submit" value="Inscrever-me" />
+                </div>
+            </div>
         </form>
     </section>
     <footer>
@@ -122,25 +149,32 @@
             <div class="footerContato" id="footerContato">
                 <h2>Contato</h2>
                 <a href="https://facebook.com/engenejr" target="_blank" title="Facebook"><img
-                        src="./imagens/facebook-logo.png" alt="Facebook Engene Jr" width="40px" height="40px"></a>
+                        src="./src/assets/images/facebook-logo.png" alt="Facebook Engene Jr" width="40px"
+                        height="40px"></a>
 
                 <a href="https://instagram.com/engenejr" target="_blank" title="Instagram"><img
-                        src="./imagens/instagram-logo.png" alt="Instagram Engene Jr" width="40px" height="40px"></a>
+                        src="./src/assets/images/instagram-logo.png" alt="Instagram Engene Jr" width="40px"
+                        height="40px"></a>
 
                 <a href="https://api.whatsapp.com/send?phone=5585997083624&text=%5BEngene%20Jr%5D%20Oi!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site"
-                    target="_blank" title="Whatsapp"><img src="./imagens/whatsapp-logo.png" alt="Whatsapp Engene Jr"
-                        width="40px" height="40px"></a>
+                    target="_blank" title="Whatsapp"><img src="./src/assets/images/whatsapp-logo.png"
+                        alt="Whatsapp Engene Jr" width="40px" height="40px"></a>
 
                 <a href="https://linkedin.com/company/engenejr" target="_blank" title="Linkedin"><img
-                        src="./imagens/linkedin-logo.png" alt="Linkedin Engene Jr" width="40px" height="40px"></a>
+                        src="./src/assets/images/linkedin-logo.png" alt="Linkedin Engene Jr" width="40px"
+                        height="40px"></a>
             </div>
             <div class="footerContato">
-                <a href="tel:+55-85-99708-3624" target="_blank" title="Telefone"><img src="./imagens/phone-call.png"
-                        alt="Telefone da Engene Jr" width="22px" height="22px"> (85) 997083624</a>
+                <a href="tel:+55-85-99708-3624" target="_blank" title="Telefone"
+                    style="color: #000; text-decoration: none; font-weight: 600;"><img
+                        src="./src/assets/images/phone-call.png" alt="Telefone da Engene Jr" width="22px" height="22px"
+                        style="color: #000; text-decoration: none; font-weight: 600;"> (85) 99708 3624</a>
             </div>
             <div class="footerContato">
-                <a href="mailto:engenejr@unilab.edu.br" target="_blank" title="E-mail"><img src="./imagens/email.png"
-                        alt="Email da Engene Jr" width="22px" height="22px"> engenejr@unilab.edu.br</a>
+                <a href="mailto:engenejr@unilab.edu.br" target="_blank" title="E-mail"
+                    style="color: #000; text-decoration: none; font-weight: 600;"><img
+                        src="./src/assets/images/email.png" alt="Email da Engene Jr" width="22px" height="22px">
+                    engenejr@unilab.edu.br</a>
             </div>
         </div>
     </footer>
