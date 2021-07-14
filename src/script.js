@@ -1,15 +1,28 @@
+const form = document.getElementById('form')
 
-function calculaMeda(nota1,nota2,nota3) {
-    let  media = (nota1 + nota2 + nota3) / 3
-    if (media >= 7 ) {
-        return 'Aprovado!'
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let data = {
+        nome,
+        email,
     }
-    if (media >= 5 && media < 7) {
-        return 'Recuperação!'
-    }
-    if (media < 5) {
-        return 'Reprovado!'
-    }
-}
+    let convertData = JSON.stringify(data);
 
-console.log(calculaMeda(4,4,4))
+    localStorage.setItem('lead', convertData)
+
+    let content = document.getElementById('content')
+
+    let carregando = `<p>carregando...</p>`
+
+    let pronto = `<p>pronto</p>`
+
+    content.innerHTML = carregando
+
+
+    setTimeout(() => {
+        content.innerHTML = pronto
+    }, 1000)
+
+})
