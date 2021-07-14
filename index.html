@@ -117,24 +117,25 @@
             </div>
         </div>
     </section>
-    <section id="sectionFormNewsletter">
-        <div class="sectionFormPai">
-            <div class="sectionFormNewsletter">
+    <section id="sectionFormNewsletter" class="section-container">
+        <div class="sectionFormPai card-container">
+            <div class="sectionFormNewsletter content">
                 <p style="text-align: center; font-size: 36px;"><strong>Receba novidades e promoções!</strong></p>
             </div>
-        </div>
-    </section>
-    <section class="section-container background-section-two">
-        <div class="card-container">
-            <div id="content">
-                <form id="form">
+            <form id="form" class="sectionFormNewsletter">
+                <div>
+                    <label for="name">Nome</label>
                     <input type="text" placeholder="name" id="nome">
-                    <input type="text" placeholder="email" id="email">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="email" id="email">
+                </div>
+                <div>
                     <input type="submit" value="Cadastrar">
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-
     </section>
     <footer>
         <div id="footerLogo">
@@ -178,6 +179,6 @@
         <p>Rodovia CE 060, km 51 - Unilab Unidade Acadêmica dos Palmares, Bloco 3, Sala 211 - Acarape - CE​</p>
     </div>
 </body>
-<script src="js/script.js"></script>
+<script src="./src/js/script.js"></script>
 
 </html>
