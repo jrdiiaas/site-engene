@@ -27,13 +27,13 @@ h3 {
 
 .containerBanner {
     background-color: #000000;
-    background-image: url(../assets/images/Banner001.png);
+    background-image: url(../assets/images/bgengene.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
+    width: 100%;
     max-width: 100%;
     height: 400px;
     max-height: 400px;
-    padding: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
 }
@@ -53,12 +53,12 @@ h3 {
 }
 
 #botaoContainer1 {
-    background-color: #ffffff;
+    background-color: #f75609;
     border-radius: 10px;
     font-size: 14pt;
     border-color: transparent;
     border-style: solid;
-    box-shadow: 0px 0px 2px #000000;
+    box-shadow: 5px 5px 20px #000000;
     margin: 25px 10% 0% 50%;
     padding: 15px;
     font-weight: 600;
@@ -69,16 +69,31 @@ h3 {
     flex-grow: 0;
 }
 
+#botaoContainer1:hover {
+    background-color: #03a000;
+    cursor: pointer;
+}
+
+@keyframes botaoContainer1 {
+    from {
+        margin-left: 60%;
+    }
+
+    to {
+        margin-left: 50%;
+    }
+
+}
+
 @media (max-width: 850px) {
     .containerBanner {
         background-color: #000000;
-        background-image: url(../assets/images/Banner001.png);
+        background-image: url(../assets/images/bgengenemobile.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
         max-width: 100%;
         height: 350px;
         max-height: 350px;
-        padding: 10px 10px 10px 10px;
         display: flex;
         align-items: center;
     }
@@ -91,7 +106,7 @@ h3 {
     #textoContainer1 {
         color: #ffffff;
         font-size: 14px;
-        max-width: 80%;
+        max-width: 50%;
         flex-grow: 1;
         margin-left: auto;
         margin-right: auto;
@@ -99,7 +114,7 @@ h3 {
     }
 
     #botaoContainer1 {
-        background-color: #ffffff;
+        background-color: #f75609;
         border-radius: 10px;
         font-size: 12pt;
         border-color: transparent;
@@ -117,27 +132,18 @@ h3 {
     }
 }
 
-@keyframes botaoContainer1 {
-    from {
-        margin-left: 60%;
-    }
-
-    to {
-        margin-left: 50%;
-    }
-
-}
-
-#botaoContainer1:hover {
-    background-color: #b1c8d5;
-    cursor: pointer;
+#sectionServices {
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 50px;
 }
 
 .divTitulos {
     text-align: center;
     font-size: 36pt;
     font-weight: 100;
-    margin: 50px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
+    color: #fff;
 }
 
 .flex-section-services {
@@ -168,13 +174,14 @@ h3 {
 
 .divServices {
     text-align: justify;
-    border: 0px solid #000;
+    border: 4px solid #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #000000;
-    padding: 20px;
+    box-shadow: 0 0 1em 0.3em #f75609, inset 0 0 1em 0.3em #f75609;
+    padding: 30px;
     width: 300px;
     margin: 25px;
     font-size: 12pt;
+    background-color: #000;
 }
 
 @media (max-width: 850px) {
@@ -206,10 +213,8 @@ h3 {
 #sectionSomos {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    background-color: #e5e5e5;
+    background-color: #242424;
     padding-bottom: 50px;
-    padding-top: 5px;
 }
 
 .divQuemSomos {
@@ -223,10 +228,11 @@ h3 {
     align-items: center;
     font-size: 16pt;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #696969;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    color: #fff;
 }
 
 .somosPainel {
@@ -253,6 +259,9 @@ h3 {
 
 }
 
+h3 {
+    margin: 30px;
+}
 #sectionPortifolio {
     display: flex;
     flex-flow: row wrap;
@@ -272,6 +281,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    margin: 30px;
 }
 
 #buttonPortifolio {
@@ -283,6 +293,7 @@ h3 {
     box-shadow: 0px 0px 2px #000000;
     padding: 10px;
     width: 150px;
+    margin: 30px;
 }
 
 #buttonPortifolio:hover {
