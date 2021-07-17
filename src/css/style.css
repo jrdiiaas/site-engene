@@ -257,11 +257,16 @@ h3 {
         margin: 25px;
     }
 
+    #instagramIMG {
+        width: 100%;
+    }
+
 }
 
 h3 {
     margin: 30px;
 }
+
 #sectionPortifolio {
     display: flex;
     flex-flow: row wrap;
@@ -269,7 +274,7 @@ h3 {
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: #f75609;
+    background-color: #696969;
     font-size: 16pt;
     padding: 50px;
 }
@@ -316,42 +321,92 @@ h3 {
 }
 
 #sectionFormNewsletter {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    align-items: center;
-    padding: 25px 25px;
-    font-size: 14pt;
-    background-color: #03a000;
-    justify-content: center;
+    background-color: #000;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sectionFormPai {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    width: 75%;
-    background-color: #f75609;
-    border: 0px solid #000;
+    border: 4px solid #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0 0 1em 0.3em #f75609,
+        inset 0 0 1em 0.3em #f75609;
+    padding: 50px;
 }
 
 .sectionFormNewsletter {
     display: flex;
     flex-flow: column wrap;
-    margin: 25px auto 25px auto;
     color: #fff;
-    width: 75%;
-    padding: 15px;
+    width: 800px
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    width: 200px;
+}
+
+#tituloForm {
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 850px) {
+
+    #tituloForm {
+        font-size: 16pt;
+        text-align: center;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    #form {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .sectionFormPai {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        border: 4px solid #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 1em 0.3em #f75609,
+            inset 0 0 1em 0.3em #f75609;
+        padding: 50px;
+    }
+
+    .sectionFormNewsletter {
+        display: flex;
+        flex-flow: column wrap;
+        color: #fff;
+        width: 100%;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+        border-radius: 5px;
+    }
 }
 
 .sectionFormNewsletter input {
     padding: 5px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
@@ -364,7 +419,6 @@ h3 {
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
-    width: 200px;
     font-size: 16pt;
 }
 
@@ -374,7 +428,6 @@ h3 {
     border: 1px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    width: 200px;
 }
 
 #portifolio2 {
@@ -384,7 +437,7 @@ h3 {
 }
 
 footer {
-    background-color: #03a000;
+    background-color: #D8DEF2;
     padding-top: 5px;
     display: flex;
     justify-content: space-around;
@@ -402,9 +455,9 @@ footer {
 
 #footerDireitos {
     text-align: center;
-    padding: 5px;
-    background-color: #03a000;
-    color: #000;
+    padding: 25px;
+    background-color: #242424;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -412,10 +465,25 @@ footer {
     footer {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: space-around;
+        justify-content: center;
+        align-content: center;
         align-items: center;
         padding-left: 25px;
         padding-right: 25px;
+        font-size: 10pt;
+    }
+
+    #footerContato {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #footerDireitos {
+        text-align: center;
+        padding: 25px;
+        background-color: #242424;
+        color: #fff;
+        font-weight: 600;
+        font-size: 10pt;
     }
 }
